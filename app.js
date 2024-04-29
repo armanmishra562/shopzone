@@ -9,7 +9,13 @@ const PORT= process.env.PORT
 app.use(
   cors()
 );
+
+
 app.use(express.json());
+
+app.use(express.static("frontend"));
+
+
 app.listen( PORT || 7000, () => {
   console.log("cart app listening at port number :",PORT ||7000);
 });
