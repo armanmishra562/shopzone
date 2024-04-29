@@ -13,7 +13,7 @@ app.use(
 
 app.use(express.json());
 
-app.use(express.static("frontend"));
+
 
 
 app.listen( PORT || 7000, () => {
